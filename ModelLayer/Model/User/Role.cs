@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.Json.Serialization;
+using System.Threading.Tasks;
+
+namespace ModelLayer.Model.User
+{
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public enum Role
+    {
+        USER=1,
+        ADMIN=2
+    }
+}
