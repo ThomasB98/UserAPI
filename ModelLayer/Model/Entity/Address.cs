@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace ModelLayer.Model.Address
+namespace ModelLayer.Model.Entity
 {
     public class Address
     {
@@ -35,6 +35,6 @@ namespace ModelLayer.Model.Address
 
         // Navigation property
         [ForeignKey("UserId")]
-        public ModelLayer.Model.User.User user { get; set; }
+        public User user { get; set; }
     }
 }

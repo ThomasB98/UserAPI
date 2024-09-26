@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ModelLayer.Model.Address;
-using ModelLayer.Model.User;
+using ModelLayer.Model.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

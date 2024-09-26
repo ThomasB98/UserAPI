@@ -5,12 +5,12 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace ModelLayer.Model.User
+namespace ModelLayer.Model.Enum
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum Role
     {
-        USER=1,
-        ADMIN=2
+        USER = 1,
+        ADMIN = 2
     }
 }

@@ -4,8 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ModelLayer.Model.Enum;
 
-namespace ModelLayer.Model.User
+namespace ModelLayer.Model.Entity
 {
     public class User
     {
@@ -25,7 +26,7 @@ namespace ModelLayer.Model.User
         [Required]
         public string UserName { get; set; }
 
-        public bool IsActive { get; set; }=true;
+        public bool IsActive { get; set; } = true;
 
         [Required]
         public DateTime CreatedDate { get; set; }
@@ -33,6 +34,6 @@ namespace ModelLayer.Model.User
         [Required]
         public Role role { get; set; }
 
-        public ModelLayer.Model.Address.Address address { get; set; }   
+        public Address address { get; set; }
     }
 }
