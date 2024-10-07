@@ -15,5 +15,7 @@ namespace DataLayer.Interface
         Task<ResponseBody<UserDto>> UpdateUserAsync(UserDto user);
         Task<ResponseBody<bool>> DeleteUserAsync(int userId);
         Task<ResponseBody<IEnumerable<UserDto>>> GetAllUsersAsync();
+        Task<ResponseBody<string>> Login(string Email, string password);
+        Task<ResponseBody<bool>> ForgetPassword(string Email,string newPassword);
     }
 }

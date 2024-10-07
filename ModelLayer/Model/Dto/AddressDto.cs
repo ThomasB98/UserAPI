@@ -25,7 +25,5 @@ namespace ModelLayer.Model.Dto
         [StringLength(10, ErrorMessage = "ZipCode cannot exceed 10 characters.")]
         public string ZipCode { get; set; }
 
-        [Required(ErrorMessage = "UserId is required.")]
-        public int UserId { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿
 using DataLayer.Constants.ResponceEntity;
+using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model.Dto;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace BusinessLayer.Service
         Task<ResponseBody<UserDto>> GetUserByIdAsync(int userId);
         Task<ResponseBody<bool>> DeleteUserAsync(int userId);
         Task<ResponseBody<UserDto>> UpdateUserAsync(UserDto updatedUserDto);
-
+        Task<ResponseBody<string>> LoginAsync(string email, string password);
+        Task<ResponseBody<bool>> ForgetPassword(string email, string newPassword);
     }
 }

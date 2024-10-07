@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ModelLayer.Model.Dto;
 using ModelLayer.Model.Entity;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,9 @@ namespace DataLayer.Constants.Mapping
 {
     public class UserProfile : Profile
     {
-        UserProfile() {
-            CreateMap<User, UserProfile>();
-            CreateMap<UserProfile, User>();
+        public UserProfile() {
+            CreateMap<User, UserDto>();
+            CreateMap<UserDto, User>();
         }
     }
 }

@@ -44,5 +44,18 @@ namespace BusinessLayer.ServiceImpl
         {
             return _userRespo.UpdateUserAsync(updatedUserDto);
         }
+
+
+        public Task<ResponseBody<string>> LoginAsync(string email,string password)
+        {
+            return _userRespo.Login(email, password);
+        }
+
+
+        public Task<ResponseBody<bool>> ForgetPassword(string email,string newPassword)
+        {
+            return _userRespo.ForgetPassword(email,newPassword);
+        }
+
     }
 }
